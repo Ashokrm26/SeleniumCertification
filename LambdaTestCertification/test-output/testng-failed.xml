@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="classes" name="Failed suite [Slider Automation Tests]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="classes" name="Slider Test - Firefox(failed)">
+    <parameter name="os" value="Windows 11"/>
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="version" value="130.0"/>
+    <classes>
+      <class name="com.sliderautomation.SliderAutomationTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testSliderFunctionality"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.sliderautomation.SliderAutomationTest -->
+    </classes>
+  </test> <!-- Slider Test - Firefox(failed) -->
+  <test thread-count="4" parallel="classes" name="Slider Test - IE(failed)">
+    <parameter name="os" value="Windows 10"/>
+    <parameter name="browser" value="Internet Explorer"/>
+    <parameter name="version" value="11.0"/>
+    <classes>
+      <class name="com.sliderautomation.SliderAutomationTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testSliderFunctionality"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.sliderautomation.SliderAutomationTest -->
+    </classes>
+  </test> <!-- Slider Test - IE(failed) -->
+</suite> <!-- Failed suite [Slider Automation Tests] -->

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Input Form Automation Tests" parallel="classes" thread-count="4">
+    <test name="Slider Test - Chrome">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="128.0"/>
+        <parameter name="os" value="Windows 10"/>
+        <classes>
+            <class name="com.inputform.InputFormAutomation"/>
+        </classes>
+    </test>
+    
+    <test name="Input Form Test - Edge">
+        <parameter name="browser" value="MicrosoftEdge"/>
+        <parameter name="version" value="127.0"/>
+        <parameter name="os" value="macOS Ventura"/>
+        <classes>
+            <class name="com.inputform.InputFormAutomation"/>
+        </classes>
+    </test>
+    
+    <test name="Input Form Test - Firefox">
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="version" value="130.0"/>
+        <parameter name="os" value="Windows 11"/>
+        <classes>
+            <class name="com.inputform.InputFormAutomation"/>
+        </classes>
+    </test>
+    
+    <test name="Input Form Test - IE">
+        <parameter name="browser" value="Internet Explorer"/>
+        <parameter name="version" value="11.0"/>
+        <parameter name="os" value="Windows 10"/>
+        <classes>
+            <class name="com.inputform.InputFormAutomation"/>
+        </classes>
+    </test>
+</suite>
