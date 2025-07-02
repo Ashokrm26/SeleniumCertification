@@ -57,7 +57,7 @@ public class SliderAutomationTest {
         // 3. Locate the slider with default value 15
         WebElement slider = driver.findElement(By.xpath("//input[@value='15']"));
 
-        // 4. Drag the slider to 95 (EXACTLY AS YOU REQUESTED)
+        // 4. Drag the slider to 95
         Actions actions = new Actions(driver);
         // Move slider by calculated offset — you may need to fine-tune based on actual browser/device
         actions.clickAndHold(slider).moveByOffset(212, 0).release().perform();  // 550 is approx for 95 value
