@@ -81,7 +81,7 @@ public class InputFormAutomation {
         driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div/div/div/div/form/div[6]/button")).click();
 
         // 5. Validate success message
-        Thread.sleep(2000);  // Allow time for the success message to appear
+        Thread.sleep(2000);
         WebElement successMsg = driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div/div/div/div/p"));
 
         String expected = "Thanks for contacting us, we will get back to you shortly.";
